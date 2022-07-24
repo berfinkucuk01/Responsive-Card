@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500&display=swap');
+*{
+    padding: 0;
+    margin:0;
+    text-decoration: none;
+}
+html,
+body{
+height: 100%;
+}
+body{
+    background-color: hsl(30, 38%, 92%);
+    margin: 20px;
+}
+.container{
+   background-color: #fff;
+   text-align: start;
+   align-items: center;
+   justify-content: center;
+   border-radius: 10px;
+   overflow: hidden;
+}
+.container .img-card{
+    background-image: url('./img\ mobile.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+}
+.container .content-box{
+    padding: 30px 40px 30px;
+    height: 285px;
+}
+.content-box p{
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(228 , 12%, 48%);
+    font-size: 15px;
+}
+.content-box h2{
+    font-family: 'Fraunces', serif;
+     font-size: 35px;
+     line-height: 30px;
+     padding: 10px 0;
+}
+.content-box .price {
+    display: flex;
+    padding-top: 15px;
+    position: absolute;
+}
+.price p{
+    color: hsl(158, 36%, 37%);
+    font-family: 'Fraunces', serif;
+    font-size: 40px;
+}
+.price small{
+    color:  hsl(228 , 12%, 48%);
+    font-size: 15px;
+    text-decoration:line-through;
+}
+.content-box .btn{
+   
+    position: relative;
+    padding: 15px 108px;
+    text-align: center;
+    background-color: hsl(158, 36%, 37%);
+   color: #fff;
+    transition-duration: 0.4s;
+    margin: 16px 0 !important;
+    top: 75px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 10px;
+}
+
+@media screen and (min-width: 768px){
+    
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        position: relative;
+        height: 430px;
+        overflow: hidden;
+    }
+
+    .container .img-card{
+        background-image: url('img\ desktop.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+    }
+
+    .img-card,
+    .content-box{
+        width: 340px;
+    }
+
+    .content-box{
+       
+       text-align: start;
+       box-sizing: border-box;
+    }
+    .content-box .p1{
+        position: absolute;
+        top: 20px;
+    }
+
+    .content-box h2{
+        position: absolute;
+        top: 50px;
+    }
+
+    .content-box p{
+       position: relative;
+        top: 35px;
+    }
+
+    .content-box .price{
+        display: flex;
+        position: relative;
+        top: 50px;
+    }
+    .content-box .price p{
+        position: relative;
+        top: 0px;
+    }
+
+    .content-box .btn{
+        padding: 15px 55px;
+    }
+}
